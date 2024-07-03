@@ -1,8 +1,8 @@
-/* Variables for corporate colors */
+/* Variables para los colores corporativos */
 :root {
-    --primary-color: #3498db; /* blue */
-    --secondary-color: #2c3e50; /* dark blue */
-    --accent-color: #e91e63; /* pink */
+    --primary-color: #3498db; /* azul */
+    --secondary-color: #2c3e50; /* azul oscuro */
+    --accent-color: #e91e63; /* rosa */
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: #ffffff;
     padding: 1em 0;
     display: flex;
     align-items: center;
@@ -40,7 +40,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     padding: 0.5em 1em;
     transition: background-color 0.3s;
@@ -59,20 +59,45 @@ section {
     margin-bottom: 2em;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .text {
+    flex: 1;
+    padding: 1em;
+    text-align: left;
+}
+
+.container .image {
+    flex: 1;
+    padding: 1em;
+    text-align: center;
+}
+
+.container .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 h1, h2 {
     color: var(--secondary-color);
 }
 
 footer {
     background-color: var(--secondary-color);
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 1em 0;
 }
 
 a.button {
     background-color: var(--accent-color);
-    color: white;
+    color: #ffffff;
     padding: 1em 2em;
     text-decoration: none;
     border-radius: 5px;
@@ -91,5 +116,14 @@ a.button:hover {
     
     nav ul li {
         margin: 0.5em 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    
+    .container .text,
+    .container .image {
+        text-align: center;
     }
 }
