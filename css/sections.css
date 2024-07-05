@@ -71,3 +71,16 @@ p {
     color: var(--color-pink);
     border: 2px solid var(--color-pink);
 }
+
+/* Clases para aplicar los colores */
+.text-blue {
+    color: var(--color-blue);
+}
+
+.text-dark-blue {
+    color: var(--color-dark-blue);
+}
+
+.text-pink {
+    color: var(--color-pink);
+}

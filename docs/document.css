@@ -1,0 +1,134 @@
+/* Variables de color y fuente */
+:root {
+    --color-blue: #00a6d3;
+    --color-dark-blue: #0A151E;
+    --color-pink: #ff2a73;
+    --font-family: 'Outfit', sans-serif;
+}
+
+/* Aplicar la fuente a todo el documento */
+body {
+    background-color: #0A151E; /* Fondo oscuro */
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    color: #333; /* Color de texto para el contenido */
+    overflow-y: scroll; /* Habilitar desplazamiento en el cuerpo */
+}
+
+/* Estilos para el contenedor del logo */
+.logo-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Espacio superior para el logo */
+}
+
+.logo {
+    max-width: 300px; /* Ajusta el tamaño del logo */
+}
+
+/* Estilos para el contenedor de papel */
+.paper-container {
+    background-color: #fff; /* Fondo blanco para la hoja de papel */
+    width: 80%;
+    max-width: 800px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /* Bordes redondeados */
+    margin: 50px auto 40px auto; /* Margen superior para el logo y centrado */
+    position: relative;
+    z-index: 1;
+    overflow: hidden; /* Asegura que el contenido no se salga del contenedor */
+}
+
+/* Estilos para el contenido del papel */
+.paper-content {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center; /* Alinear encabezados al centro */
+}
+
+p {
+    line-height: 1.6; /* Espacio entre líneas */
+    margin: 16px 0; /* Espaciado entre párrafos */
+    font-size: 18px; /* Tamaño de letra */
+    text-align: justify; /* Justificar párrafos */
+}
+
+/* Estilos para las imágenes dentro del papel */
+.paper-content img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin: 20px 0; /* Margen para separar la imagen del texto */
+}
+
+/* Estilos para los botones */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-pink);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: white;
+    color: var(--color-pink);
+    border: 2px solid var(--color-pink);
+}
+
+/* Estilos para listas desordenadas */
+ul {
+    list-style-type: disc; /* Tipo de viñeta para listas desordenadas */
+    margin: 16px 0; /* Espaciado entre la lista y otros elementos */
+    padding-left: 20px; /* Sangría a la izquierda */
+}
+
+ul li {
+    margin-bottom: 8px; /* Espacio entre elementos de la lista */
+    font-size: 18px; /* Tamaño de letra */
+    text-align: justify; /* Justificar elementos de la lista */
+}
+
+/* Estilos para listas ordenadas */
+ol {
+    list-style-type: decimal; /* Tipo de numeración para listas ordenadas */
+    margin: 16px 0; /* Espaciado entre la lista y otros elementos */
+    padding-left: 20px; /* Sangría a la izquierda */
+}
+
+ol li {
+    margin-bottom: 8px; /* Espacio entre elementos de la lista */
+    font-size: 18px; /* Tamaño de letra */
+    text-align: justify; /* Justificar elementos de la lista */
+}
+
+/* Media Queries para mejorar la responsividad */
+@media (max-width: 768px) {
+    .paper-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+/* Clases para aplicar los colores */
+.text-blue {
+    color: var(--color-blue);
+}
+
+.text-dark-blue {
+    color: var(--color-dark-blue);
+}
+
+.text-pink {
+    color: var(--color-pink);
+}
