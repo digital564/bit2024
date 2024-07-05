@@ -12,7 +12,8 @@
             <img src="logo-placeholder.png" alt="Logotipo de la empresa">
         </div>
         <nav>
-            <ul>
+            <button class="menu-toggle" aria-label="Abrir menú de navegación">&#9776;</button>
+            <ul class="menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
                 <li><a href="#servicios">Servicios</a></li>
@@ -32,14 +33,14 @@
                     <p>Desatando el potencial de TI, una asociación a la vez. En Bitmodular, nos especializamos en servicios de consultoría de TI adaptados para medianas y grandes empresas. Nuestra misión es conectarte con talento tecnológico de primera categoría en España, asegurando que tus proyectos prosperen.</p>
                 </div>
                 <div class="image">
-                    <img src="team-process-creation.jpg" alt="Profesionales de TI trabajando">
+                    <img src="img/Profesionales-de-TI-trabajando.jpg" alt="Profesionales de TI trabajando">
                 </div>
             </div>
         </section>
         <section id="sobre-nosotros">
             <div class="container">
                 <div class="image">
-                    <img src="working-wall.jpg" alt="Ambiente profesional de oficina">
+                    <img src="img/Ambiente-profesional-de-oficina.jpg" alt="Ambiente profesional de oficina">
                 </div>
                 <div class="text">
                     <h2>Sobre Nosotros</h2>
@@ -54,14 +55,14 @@
                     <p>En Bitmodular, proporcionamos una gama completa de servicios de consultoría de TI, ofreciendo profesionales de tecnología altamente calificados para ayudarte a alcanzar tus objetivos empresariales. Nuestro objetivo es establecer asociaciones sólidas con empresas de la Unión Europea, entregando talento que se alinea con tu visión y que impulsa tus proyectos hacia adelante. Ya sea que necesites experiencia a corto plazo o colaboración a largo plazo, tenemos el talento para satisfacer tus necesidades.</p>
                 </div>
                 <div class="image">
-                    <img src="man-with-tablet-clouds-background-icons.jpg" alt="Íconos de servicios de TI">
+                    <img src="img/Iconos-de-servicios-de-TI.jpg" alt="Íconos de servicios de TI">
                 </div>
             </div>
         </section>
         <section id="proceso">
             <div class="container">
                 <div class="image">
-                    <img src="contact-us-help-business-consulting-support.jpg" alt="Infografía del proceso">
+                    <img src="img/Infografia-del-proceso.jpg" alt="Infografía del proceso">
                 </div>
                 <div class="text">
                     <h2>Nuestro Proceso</h2>
@@ -88,14 +89,14 @@
                     </ul>
                 </div>
                 <div class="image">
-                    <img src="collage-customer-experience-concept.jpg" alt="Clientes satisfechos">
+                    <img src="img/Clientes-satisfechos.jpg" alt="Clientes satisfechos">
                 </div>
             </div>
         </section>
         <section id="industrias">
             <div class="container">
                 <div class="image">
-                    <img src="factory-workers-walking-through-large-production-hall-having-conversation.jpg" alt="Diferentes industrias">
+                    <img src="img/Diferentes-industrias.jpg" alt="Diferentes industrias">
                 </div>
                 <div class="text">
                     <h2>Industrias</h2>
@@ -115,28 +116,24 @@
             <div class="container">
                 <div class="text">
                     <h2>Recursos</h2>
-                    <p>Explora nuestra colección de recursos valiosos para ayudarte a tomar decisiones informadas:</p>
-                    <ul>
-                        <li><a href="#">Documento Técnico: El Futuro de la Consultoría de TI</a></li>
-                        <li><a href="#">E-book: Encontrar el Talento Tecnológico Adecuado</a></li>
-                        <li><a href="#">Guía: Mejores Prácticas para Proyectos de TI</a></li>
-                    </ul>
+                    <p>En Bitmodular, proporcionamos una variedad de recursos para ayudarte a tomar decisiones informadas sobre tus necesidades de TI. Explora nuestros estudios de casos, guías y artículos para obtener información valiosa y mantenerse al día con las últimas tendencias y tecnologías.</p>
+                    <a href="#" class="button">Explorar Recursos</a>
                 </div>
                 <div class="image">
-                    <img src="woman-working-office.jpg" alt="Documentos técnicos y guías">
+                    <img src="img/Documentos-tecnicos-y-guias.jpg" alt="Recursos y herramientas">
                 </div>
             </div>
         </section>
         <section id="contacto">
             <div class="container">
                 <div class="image">
-                    <img src="businessman-talking-mobile-phone-waiting-area.jpg" alt="Profesional amigable en llamada">
+                    <img src="img/Profesional-amigable-en-llamada.jpg" alt="Profesional amigable en llamada">
                 </div>
                 <div class="text">
                     <h2>Contacto</h2>
                     <p>¿Listo para encontrar el talento de TI perfecto para tu proyecto? ¡Agenda una reunión con nosotros hoy! Usa el enlace a continuación para reservar una reunión con uno de nuestros agentes y discutir cómo podemos ayudar a impulsar tu negocio hacia adelante.</p>
 					<br>
-					<a href="https://calendly.com/bitmodular/30min" class="button">Agendar una Reunión</a>
+					<a href="https://calendly.com/bitmodular/30min" target="_blank"class="button">Agendar una Reunión</a>
 				</div>
 			</div>
 		</section>
@@ -144,5 +141,10 @@
 	<footer>
 		<p>© 2024 Bitmodular. Todos los derechos reservados.</p>
 	</footer>
+	<script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('menu-visible');
+        });
+    </script>
 </body>
 </html>

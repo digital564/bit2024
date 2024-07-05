@@ -19,11 +19,25 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .logo img {
     height: 50px;
     margin-left: 1em;
+}
+
+nav {
+    position: relative;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
 }
 
 nav ul {
@@ -33,6 +47,7 @@ nav ul {
     display: flex;
     gap: 1em;
     margin-right: 1em;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -64,12 +79,12 @@ section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    text-align: left;
 }
 
 .container .text {
     flex: 1;
     padding: 1em;
-    text-align: left;
 }
 
 .container .image {
@@ -102,16 +117,40 @@ a.button {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 1em;
 }
 
 a.button:hover {
     background-color: var(--primary-color);
 }
 
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.menu-visible {
+    display: flex;
+}
+
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu-toggle {
+        display: block;
+        margin-right: 1em;
+    }
+    
     nav ul {
         flex-direction: column;
         align-items: center;
+        gap: 0;
     }
     
     nav ul li {
@@ -125,5 +164,14 @@ a.button:hover {
     .container .text,
     .container .image {
         text-align: center;
+        padding: 0.5em;
+    }
+    
+    .container .text {
+        order: 2;
+    }
+    
+    .container .image {
+        order: 1;
     }
 }
