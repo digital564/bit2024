@@ -1,0 +1,73 @@
+/* General Section Styles */
+body {
+    font-family: var(--font-family);
+}
+
+section {
+    padding: 80px 20px;
+    margin-top: 60px; /* Add margin-top to accommodate fixed header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse; /* Iniciar con dirección invertida */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container .text,
+.container .image {
+    flex: 1 1 45%; /* Ajustar el ancho para que ocupen menos espacio */
+    padding: 20px;
+}
+
+.container .image {
+    text-align: center; /* Centrar la imagen */
+}
+
+.container .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; /* Añadir redondeo a las imágenes */
+}
+
+.container .text {
+    text-align: left; /* Alinear el texto a la izquierda */
+    font-size: 24px; /* Aumentar tamaño de la letra */
+    line-height: 1.6; /* Aumentar espacio entre líneas */
+}
+
+.container:nth-child(even) .text {
+    order: 2;
+}
+
+.container:nth-child(even) .image {
+    order: 1;
+}
+
+p {
+    font-size: 24px; /* Aumentar tamaño de la letra */
+    line-height: 1.6; /* Aumentar espacio entre líneas */
+}
+
+/* Estilos para los botones */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-pink);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: white;
+    color: var(--color-pink);
+    border: 2px solid var(--color-pink);
+}

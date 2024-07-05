@@ -1,0 +1,13 @@
+/* Footer Styles */
+footer {
+    background-color: var(--color-dark-blue);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: var(--font-family);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}

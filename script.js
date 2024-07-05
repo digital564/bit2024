@@ -29,7 +29,16 @@ document.addEventListener('DOMContentLoaded', function() {
     loadSection('contacto', 'sections/contacto.html');
 
     // Configurar el botón del menú
-    document.querySelector('.menu-toggle').addEventListener('click', function() {
-        document.querySelector('.menu').classList.toggle('menu-visible');
+    document.addEventListener('click', function(event) {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        if (menuToggle && menu) {
+            if (event.target === menuToggle) {
+                menu.classList.toggle('menu-visible');
+            } else if (!menu.contains(event.target) && menu.classList.contains('menu-visible')) {
+                menu.classList.remove('menu-visible');
+            }
+        }
     });
 });

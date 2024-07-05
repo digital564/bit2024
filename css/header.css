@@ -1,0 +1,91 @@
+/* Variables de color */
+:root {
+    --color-blue: #00a6d3;
+    --color-dark-blue: #0A151E;
+    --color-pink: #ff2a73;
+    --font-family: 'Outfit', sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--color-blue);
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-family);
+}
+
+header .menu {
+    font-size: 1.2em;
+}
+
+header .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .menu li {
+    margin: 0 10px;
+}
+
+header .menu a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+}
+
+header .menu a:hover {
+    background-color: var(--color-pink);
+}
+
+header .menu li:last-child a {
+    margin-right: 40px; /* Aumentar el margen del último botón */
+}
+
+header .menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+header .menu-visible {
+    display: block;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header .menu {
+        display: none;
+        flex-direction: column;
+        background-color: var(--color-blue);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    header .menu-toggle {
+        display: block;
+    }
+
+    header .menu.menu-visible {
+        display: flex;
+    }
+
+    header .menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
