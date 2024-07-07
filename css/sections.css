@@ -96,7 +96,7 @@ p {
 
 #sobre-nosotros {
     background-color: var(--color-blue);
-    color: white;
+    color: var(--color-dark-blue);
 }
 
 #servicios {
@@ -105,10 +105,8 @@ p {
 }
 
 #proceso {
-    background-image: url('../img/background-png.png'); /* Añade la ruta a tu imagen aquí */
-    background-size: cover; /* Asegura que la imagen cubra toda la sección */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen */
+    background-color: var(--color-dark-blue);
+    color: white;
 }
 
 #por-que-elegirnos {
@@ -123,7 +121,7 @@ p {
 
 #recursos {
     background-color: var(--color-blue);
-    color: white;
+    color: var(--color-dark-blue);
 }
 
 #contacto {
