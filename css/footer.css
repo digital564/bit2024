@@ -5,9 +5,11 @@ footer {
     text-align: center;
     padding: 20px;
     font-family: var(--font-family);
+    margin: 0; /* Eliminar margen del footer */
 }
 
-footer a {
+footer p {
     color: white;
     text-decoration: none;
+    text-align: center;
 }

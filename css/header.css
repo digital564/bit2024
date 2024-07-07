@@ -8,7 +8,7 @@
 
 /* Header Styles */
 header {
-    background-color: var(--color-blue);
+    background-color: var(--color-dark-blue);
     color: white;
     padding: 10px 20px;
     position: fixed;
@@ -20,6 +20,10 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: var(--font-family);
+}
+
+header .logo {
+    font-size: 1.5em;
 }
 
 header .menu {
