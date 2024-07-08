@@ -18,15 +18,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cargar las secciones
     loadSection('header', 'sections/header.html');
-    loadSection('footer', 'sections/footer.html');
     loadSection('inicio', 'sections/inicio.html');
     loadSection('sobre-nosotros', 'sections/sobre-nosotros.html');
+    loadSection('call-to-action', 'sections/call-to-action.html');
     loadSection('servicios', 'sections/servicios.html');
-    loadSection('proceso', 'sections/proceso.html');
     loadSection('por-que-elegirnos', 'sections/por-que-elegirnos.html');
+    loadSection('proceso', 'sections/proceso.html');
     loadSection('industrias', 'sections/industrias.html');
     loadSection('recursos', 'sections/recursos.html');
     loadSection('contacto', 'sections/contacto.html');
+    loadSection('footer', 'sections/footer.html');
 
     // Configurar el botón del menú
     document.addEventListener('click', function(event) {
