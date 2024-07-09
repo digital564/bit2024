@@ -69,7 +69,8 @@ p {
     text-decoration: none;
     border-radius: 20px; /* Bordes redondeados */
     transition: background-color 0.3s ease;
-    font-size: 24px
+    font-size: 24px;
+    margin-top: 20px;
 }
 
 .button:hover {
