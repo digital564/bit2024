@@ -171,3 +171,8 @@ p {
     background-color: var(--color-dark-blue);
     color: white;
 }
+
+#video-section {
+    background-color: var(--color-dark-blue);
+    color: white;
+}
