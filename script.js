@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Cargar las secciones
     loadSection('header', 'sections/header.html');
     loadSection('inicio', 'sections/inicio.html');
+    loadSection('video', 'sections/video.html');
     loadSection('sobre-nosotros', 'sections/sobre-nosotros.html');
     loadSection('call-to-action', 'sections/call-to-action.html');
     loadSection('servicios', 'sections/servicios.html');
